@@ -1,0 +1,22 @@
+spring:
+  application:
+    name:
+     spring-security-basic
+  datasource:
+    url: jdbc:h2:mem:user_auth
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
+#spring.security.user.name=ajith
+#spring.security.user.password=ajith
+#spring.security.user.roles=ADMIN
+
