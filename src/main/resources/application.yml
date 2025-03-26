@@ -16,6 +16,17 @@ spring:
   h2:
     console:
       enabled: true
+
+  session:
+    store-type: jdbc
+    jdbc:
+      initialize-schema: always
+
+server:
+  servlet:
+    session:
+      timeout: 5m
+
 #spring.security.user.name=ajith
 #spring.security.user.password=ajith
 #spring.security.user.roles=ADMIN
